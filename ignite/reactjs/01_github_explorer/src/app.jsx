@@ -1,7 +1,12 @@
+import { Counter } from './components/counter';
+import { RepositoryList } from './components/RepositoryList';
 import './styles/global.scss';
 
 export function App() {
-  
-    return <h1>Fala mundinho</h1>
-
+    return (
+    <>
+    <RepositoryList />
+    <Counter />
+    </>
+    )
 }
