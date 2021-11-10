@@ -1,0 +1,30 @@
+section.repository-list {
+    margin: 40px;
+
+    h1 {
+        margin-bottom: 16px;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li { //estilo lista
+       & + li {
+           margin-top: 20px; //caso tenha um item acima atribui margem
+       }
+        
+       p{ //estilo do texto
+           font-size: 14px;
+           color:aqua;
+           margin-top: 8px;
+       }
+
+       a { //estilo do link
+           display: inline-block;
+           margin-top: 16px;
+           text-decoration: none;
+           color: 8257e6;
+       }
+    }
+}
