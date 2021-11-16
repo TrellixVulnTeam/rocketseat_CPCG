@@ -4,10 +4,15 @@ import "../styles/repositories.scss";
 
 import { RepositoryItem } from "./RepositoryItem";
 
+interface Repository {
+    name: string;
+    description: string;
+    html_url:string;
 
- 
+}
+
 export function RepositoryList() {
-    const [repositories, setRepositories] = useState([]);
+    const [repositories, setRepositories] = useState<Repository[]>([]);
     
     //cuidado para não colocar o segundo parametro = causa looping
     useEffect(() => {
@@ -15,7 +20,7 @@ export function RepositoryList() {
         .then(response => response.json())
         .then(data => setRepositories(data))
     }, []) 
-  
+
     return (
         <section className="Repository-List">
             <h1>Lista de repositórios</h1>

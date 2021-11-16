@@ -3,6 +3,7 @@ section.Repository-List {
 
     h1 {
         margin-bottom: 16px;
+        text-align: center;
     }
 
     ul {
@@ -10,13 +11,21 @@ section.Repository-List {
     }
 
     li { //estilo lista
+        display: inline-block; 
+        box-sizing: border-box;
+        text-align: center;
+        border: 3px solid black;
+        border-radius: 6px;
+        
        & + li {
-           margin-top: 20px; //caso tenha um item acima atribui margem
+           margin-top: 20px;
+           margin-left: 20px;
+           //caso tenha um item acima atribui margem
        }
         
        p{ //estilo do texto
            font-size: 14px;
-           color:aqua;
+           color:rgb(244, 245, 245);
            margin-top: 8px;
        }
 
@@ -24,6 +33,7 @@ section.Repository-List {
            display: inline-block;
            margin-top: 16px;
            text-decoration: none;
+           font-weight: bold;
            color: 8257e6;
        }
     }
