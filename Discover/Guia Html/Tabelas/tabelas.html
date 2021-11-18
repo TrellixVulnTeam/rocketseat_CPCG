@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=table, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    <div tabela simples>
+    <table>
+        <caption>Pessoas por idade</caption>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>mayk</td>
+                    <td>26</td>
+                </tr>
+                <tr>    
+                    <td>gut</td>
+                    <td>28</td>
+                </tr>    
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Total:</td>
+                    <td>2 pessoas</td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+    <div tabela complexa>
+        <table>
+            <caption><h2>Produção</h2></caption>
+
+            <colgroup>
+                <col>
+                <col span="2" style="background-color: rgb(110, 141, 141);">
+                <col span="2" style="background-color: rgb(39, 76, 145);">
+            </colgroup>
+
+            <thead>
+            <tr>
+                <th rowspan="2"></th>
+                <th colspan="2" scope="colgroup">Giga SP</th>
+                <th colspan="2" scope="colgroup">Giga MG</th>
+            </tr>
+            <tr>
+                <th scope="col">Vendidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Produzidos</th>
+                <th scope="col">Vendidos</th>
+            </tr>
+
+            <tbody>
+
+            </tbody>
+                <tr>
+                    <th scope="row">Leite</th>
+                    <td>50</td>
+                    <td>30</td>
+                    <td>20</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <th scope="row">Café</th>
+                    <td>10</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>25</td>
+                </tr>
+            </thead>
+        </table>
+    </div>        
+</body>
+</html>
