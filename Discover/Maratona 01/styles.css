@@ -1,0 +1,44 @@
+/* video time* 2:09:35/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+}
+/*TABLE================*/
+#dataTable {
+    border: 1px solid rgb(113, 113, 116);
+    background: rgb(48, 48, 48);
+    margin: 50px;
+    padding: 10px;
+    color: whitesmoke;
+    border-radius: 6px;
+}
+/* BALANCE======== */
+body {
+    font-family: 'Poppins',sans-serif;
+    background: rgb(24, 23, 23);
+}
+.container {
+    width: min(90vw, 800px);
+    margin: auto;
+}
+
+
+
+/* HEADER======== */
+header {
+    background: rgb(59, 57, 57);
+    padding: 2rem 0 10rem;
+    text-align: center;
+}
+
+#logo {
+    color: rgb(31, 153, 184);
+    font-weight: 100;
+}
+
+footer {
+    text-align: center;
+}
