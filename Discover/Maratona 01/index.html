@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Control Finance$</title>
+    <title>L.Inventory</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,60 +15,145 @@
 
 <body>
     <header id="logo">
-        <h1>Control Finance$</h1>
+        <!-- subs por img logo -->
+        <h1>L.Inventory</h1>
     </header>
 
     <main class="container">
         <section id="balance">
-            <h2>Balanço</h2>
+            <h2 class="src-only">Relação</h2>
             <div class="card">
-                <h3>Entradas</h3>
-                <p>5K</p>
+                <h3>
+                    <span>Disponíveis</span>
+                    <img src="./assets/event_available_white_24dp.svg" alt="imagem de disponíveis">
+                </h3>
+                <p>64</p>
             </div>
 
             <div class="card">
-                <h3>Saídas</h3>
-                <p>2k</p>
+                <h3>
+                    <span>Alocados</span>
+                    <img src="./assets/event_busy_white_24dp.svg" alt="imagem de disponíveis">
+                </h3>
+                <p>243</p>
             </div>
 
-            <div class="card">
-                <h3>Total</h3>
-                <p>3K</p>
+            <div class="card total">
+                <h3>
+                    <span>Total</span>
+                    <img src="./assets/home_white_24dp.svg" alt="imagem de disponíveis">
+                </h3>
+                <p>307</p>
             </div>
         </section>
 
-        <section id="transaction">
-            <h2>Transações</h2>
+        <section id="inventory">
+            <h2 class="src-only">Inventário</h2>
+
+            <a href="#" class="button new">+ Incluir máquinas</a>
             <table id="dataTable">
                 <thead>
                     <tr>
-                        <th>Descrição </th>
-                        <th>Valor</th>
-                        <th>Data</th>
+                        <th>Status</th>
+                        <th>Hostname</th>
+                        <th>User</th>
+                        <th>Patrimônio</th>
+                        <th>Modelo</th>
+                        <th>CDC</th>
+                        <th></th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Luz</td>
-                        <td>-R$500,00</td>
-                        <td>10/11/2021</td>
+                        <td class="status">Disponível</td>
+                        <td class="hostname">LST-INF-NOTE03</td>
+                        <td class="user">guilherme.nascimento</td>
+                        <td class="patrimonio">0076</td>
+                        <td class="modelo">Modelo</td>
+                        <td class="cdc">Operações - IT1100</td>
+                        <td><img src="./assets/minus.svg" alt="exclusão"></td>
                     </tr>
+                   
                     <tr>
-                        <td>Água</td>
-                        <td>-R$128,00</td>
-                        <td>8/11/2021</td>
+                        <td class="status">Disponível</td>
+                        <td class="hostname">LST-INF-NOTE03</td>
+                        <td class="user">guilherme.nascimento</td>
+                        <td class="patrimonio">0076</td>
+                        <td class="modelo">Modelo</td>
+                        <td class="cdc">Operações - IT1100</td>
+                        <td><img src="./assets/minus.svg" alt="exclusão"></td>
                     </tr>
+                   
                     <tr>
-                        <td>Aluguel</td>
-                        <td>-R$2.500,00</td>
-                        <td>18/11/2021</td>
+                        <td class="status">Disponível</td>
+                        <td class="hostname">LST-INF-NOTE03</td>
+                        <td class="user">guilherme.nascimento</td>
+                        <td class="patrimonio">0076</td>
+                        <td class="modelo">Modelo</td>
+                        <td class="cdc">Operações - IT1100</td>
+                        <td><img src="./assets/minus.svg" alt="exclusão"></td>
                     </tr>
+                   
+                    <tr>
+                        <td class="status">Disponível</td>
+                        <td class="hostname">LST-INF-NOTE03</td>
+                        <td class="user">guilherme.nascimento</td>
+                        <td class="patrimonio">0076</td>
+                        <td class="modelo">Modelo</td>
+                        <td class="cdc">Operações - IT1100</td>
+                        <td><img src="./assets/minus.svg" alt="exclusão"></td>
+                    </tr>
+                   
                 </tbody>
             </table>
         </section>
-
     </main>
-    <footer><p>Control Finance$</p></footer>
+
+    <div class="modal-overlay active">
+        <div class="modal">
+            <div id="form">
+                <h2>Adicionar Patrimônio</h2>
+                <form action="">
+                    <div class="input-group">
+                        <label class="src-only" 
+                                for="status">Status:</label>
+
+                        <input type="text" 
+                                id="status" 
+                                name="status"
+                                placeholder="status"
+                        />
+                    </div>
+                    <div class="input-group">
+                        <label class="src-only" 
+                                for="hostname">Hostname:</label>
+
+                        <input type="text" 
+                                id="hostname" 
+                                name="hostname"
+                                placeholder="hostname"
+                        />
+                    </div>
+                    <div class="input-group">
+                        <label class="src-only" 
+                                for="user">User:</label>
+
+                        <input type="text" 
+                                id="user" 
+                                name="user"
+                                placeholder="user"
+                        />
+                    </div>
+                    <div class="input-group"></div>
+                    <a href="#" class="button cancel">Cancelar</a>
+                    <button>Salvar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <footer><p>L.Inventory</p></footer>
 
 
 </body>
