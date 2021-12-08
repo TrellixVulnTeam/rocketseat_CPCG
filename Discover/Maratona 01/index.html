@@ -11,6 +11,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;
 0,200;0,400;0,700;1,100;1,200;1,400&display=swap" rel="stylesheet"> 
+<script src="./sript.js"></script> 
 </head>
 
 <body>
@@ -50,7 +51,9 @@
         <section id="inventory">
             <h2 class="src-only">Inventário</h2>
 
-            <a href="#" class="button new">+ Incluir máquinas</a>
+            <a href="#" 
+            onclick="Modal.open()"
+            class="button new">+ Incluir máquinas</a>
             <table id="dataTable">
                 <thead>
                     <tr>
@@ -109,7 +112,7 @@
         </section>
     </main>
 
-    <div class="modal-overlay active">
+    <div class="modal-overlay">
         <div class="modal">
             <div id="form">
                 <h2>Adicionar Patrimônio</h2>
@@ -144,9 +147,14 @@
                                 placeholder="user"
                         />
                     </div>
-                    <div class="input-group"></div>
-                    <a href="#" class="button cancel">Cancelar</a>
+                    <div class="input-group actions">
+
+                    <a href="#" 
+                    onclick="Modal.close()"
+                    class="button cancel">Cancelar</a>
+                
                     <button>Salvar</button>
+                    </div>  
                 </form>
             </div>
         </div>
@@ -155,6 +163,8 @@
 
     <footer><p>L.Inventory</p></footer>
 
+    
+    
 
 </body>
 
